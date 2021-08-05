@@ -15,13 +15,13 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content.lower().startswith( "i am dad"):
+    if message.content.lower().startswith( "i am dad "):
         await message.channel.send('No, I am dad')
 
-    elif message.content.lower().startswith("im dad"):
+    elif message.content.lower().startswith("im dad "):
         await message.channel.send('No, I am dad')
 
-    elif message.content.lower().startswith("i'm dad" or "im dad" or "i am dad"):
+    elif message.content.lower().startswith("i'm dad "):
         await message.channel.send('No, I am dad')
 
     elif message.content.lower().startswith("i'm "):
