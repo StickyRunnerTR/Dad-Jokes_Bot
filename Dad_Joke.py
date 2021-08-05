@@ -26,15 +26,24 @@ async def on_message(message):
 
     elif message.content.lower().startswith("i'm "):
         await message.channel.send('Hi {}, i\'m Dad'.format(message.content[4:]))
-        await message.add_reaction('<:OMEGALUL:861981687542186045>')
+        try:
+            await message.add_reaction('<:OMEGALUL:861981687542186045>')
+        except:
+            continue
     
     elif message.content.lower().startswith("im "):
         await message.channel.send('Hi {}, i\'m Dad'.format(message.content[3:]))
-        await message.add_reaction('<:OMEGALUL:861981687542186045>')
+        try:
+            await message.add_reaction('<:OMEGALUL:861981687542186045>')
+        except:
+            continue
 
     elif message.content.lower().startswith("i am "):
         await message.channel.send('Hi {}, i\'m Dad'.format(message.content[5:]))
-        await message.add_reaction('<:OMEGALUL:861981687542186045>')
+        try:
+            await message.add_reaction('<:OMEGALUL:861981687542186045>')
+        except:
+            continue
    
 
 client.run(os.getenv('TOKEN'))
