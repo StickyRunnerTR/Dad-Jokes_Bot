@@ -29,21 +29,21 @@ async def on_message(message):
         try:
             await message.add_reaction('<:OMEGALUL:861981687542186045>')
         except:
-            continue
+            pass
     
     elif message.content.lower().startswith("im "):
         await message.channel.send('Hi {}, i\'m Dad'.format(message.content[3:]))
         try:
             await message.add_reaction('<:OMEGALUL:861981687542186045>')
         except:
-            continue
+            pass
 
     elif message.content.lower().startswith("i am "):
         await message.channel.send('Hi {}, i\'m Dad'.format(message.content[5:]))
         try:
             await message.add_reaction('<:OMEGALUL:861981687542186045>')
         except:
-            continue
+            pass
    
 
 client.run(os.getenv('TOKEN'))
