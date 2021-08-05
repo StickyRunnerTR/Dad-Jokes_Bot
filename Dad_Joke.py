@@ -9,6 +9,7 @@ client = commands.Bot(command_prefix=None, help_command=None)
 async def on_ready():
     print('Currently Online as {0.user}'.format(client))
 
+@commands.cooldown(1, 60, commands.BucketType.guild)
 @client.event
 async def on_message(message):
     if message.author == client.user:
