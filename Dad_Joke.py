@@ -3,7 +3,7 @@ from discord.ext import commands
 import os
 
 
-client = commands.Bot(command_prefix=None, help_command=None)
+client = commands.Bot(command_prefix=None, help_command=None, allowed_mentions=discord.AllowedMentions(roles=True, users=True, everyone=False, replied_user=True))
 
 @client.event
 async def on_ready():
